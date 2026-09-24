@@ -98,7 +98,6 @@ const meta: Meta<ButtonComponent> = {
       ...args,
 
       onClick: () => {
-        alert('¡Hiciste click en el botón! 🎉');
       },
     },
 

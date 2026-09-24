@@ -1,5 +1,5 @@
 .button {
-  padding: 10px 18px;
+  padding: 40px 18px;
 
   border-radius: 7px;
   border: none;
@@ -16,7 +16,7 @@
 /* Primary */
 
 .primary {
-  background: #7c3aed;
+  background: #917cb6;
   color: white;
 }
 
