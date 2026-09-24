@@ -1,0 +1,56 @@
+.button {
+  padding: 10px 18px;
+
+  border-radius: 7px;
+  border: none;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+/* Primary */
+
+.primary {
+  background: #7c3aed;
+  color: white;
+}
+
+.primary:hover {
+  background: #6d28d9;
+}
+
+/* Secondary */
+
+.secondary {
+  background: white;
+  color: #3f3f46;
+  border: 1px solid #d4d4d8;
+}
+
+.secondary:hover {
+  background: #f4f4f5;
+}
+
+/* Danger */
+
+.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.danger:hover {
+  background: #dc2626;
+}
+
+/* Disabled */
+
+.button:disabled {
+  background: #e4e4e7;
+  color: #a1a1aa;
+  cursor: not-allowed;
+}

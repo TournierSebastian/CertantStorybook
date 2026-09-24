@@ -1,0 +1,21 @@
+<div class="demo-modal">
+  <main>
+    <section class="intro">
+      <span class="eyebrow">COMPONENT DEMO</span>
+      <h1>Modal</h1>
+      <p>Una ventana para mostrar contenido sobre la página actual.</p>
+    </section>
+
+    <app-button
+      label="Abrir modal"
+      variant="primary"
+      (click)="openModal()"
+    />
+  </main>
+
+  <app-modal [isOpen]="isModalOpen" (closed)="closeModal()">
+    <span class="modal-label">MODAL</span>
+    <h2>Contenido proyectado</h2>
+    <p>Este contenido se inserta dentro del modal usando ng-content.</p>
+  </app-modal>
+</div>

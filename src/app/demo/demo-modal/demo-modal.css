@@ -1,0 +1,37 @@
+.demo-modal {
+  min-height: calc(100vh - 64px);
+  background: #f8f8fa;
+  color: #18181b;
+}
+
+main {
+  width: min(800px, calc(100% - 40px));
+  margin: auto;
+  padding: 80px 0;
+}
+
+.eyebrow,
+.modal-label {
+  color: #7c3aed;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 42px;
+  letter-spacing: -.04em;
+}
+
+.intro p,
+app-modal p {
+  margin: 0;
+  color: #71717a;
+  line-height: 1.5;
+}
+
+h2 {
+  margin: 8px 0;
+  font-size: 22px;
+}

@@ -1,0 +1,49 @@
+.input-demo {
+  width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+label {
+  color: #3f3f46;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 7px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  background: white;
+}
+
+input:focus {
+  border-color: #7c3aed;
+
+  box-shadow:
+    0 0 0 3px rgba(124, 58, 237, .1);
+}
+
+.field span {
+  color: #a1a1aa;
+
+  font-size: 11px;
+}

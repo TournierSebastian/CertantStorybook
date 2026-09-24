@@ -1,0 +1,320 @@
+:host {
+  display: block;
+}
+
+.app-container {
+  min-height: 100vh;
+
+  background: #f8f8fa;
+  color: #18181b;
+  transition: background-color .2s, color .2s;
+}
+
+.app-header {
+  min-height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 7px;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.storybook {
+  min-height: 100vh;
+  background: #f8f8f8;
+  color: #1f1f23;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* HEADER */
+
+.header {
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 24px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e7;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+}
+
+.storybook-logo {
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 7px;
+
+  background: #ff4785;
+  color: white;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.version {
+  padding: 4px 8px;
+
+  border-radius: 5px;
+
+  background: #f3e8ff;
+  color: #7c3aed;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* LAYOUT */
+
+.layout {
+  min-height: calc(100vh - 64px);
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+  padding: 24px 12px;
+
+  background: #ffffff;
+
+  border-right: 1px solid #e5e5e7;
+}
+
+.sidebar-title {
+  padding: 0 12px 12px;
+
+  color: #a1a1aa;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.component-item {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 12px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #52525b;
+
+  text-align: left;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.component-item:hover {
+  background: #f4f4f5;
+}
+
+.component-item.active {
+  background: #f3e8ff;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.icon {
+  width: 18px;
+
+  color: #a1a1aa;
+  font-size: 11px;
+}
+
+.component-item.active .icon {
+  color: #7c3aed;
+}
+
+
+/* MAIN */
+
+.main {
+  padding: 45px;
+
+  min-width: 0;
+}
+
+.component-page {
+  width: min(1000px, 100%);
+  margin: auto;
+}
+
+.component-header {
+  margin-bottom: 30px;
+}
+
+.component-label {
+  color: #7c3aed;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.component-header h1 {
+  margin: 6px 0;
+
+  font-size: 30px;
+  letter-spacing: -.03em;
+}
+
+.component-header p {
+  margin: 0;
+
+  color: #71717a;
+
+  font-size: 14px;
+}
+
+
+/* CANVAS */
+
+.canvas {
+  overflow: hidden;
+
+  border: 1px solid #dedee2;
+  border-radius: 8px;
+
+  background: white;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, .04);
+}
+
+.canvas-toolbar {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+
+  border-bottom: 1px solid #e5e5e7;
+
+  color: #52525b;
+
+  font-size: 12px;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+
+  height: 48px;
+
+  margin-left: 18px;
+
+  color: #a1a1aa;
+}
+
+.tab.active {
+  color: #7c3aed;
+
+  border-bottom: 2px solid #7c3aed;
+}
+
+
+/* PREVIEW */
+
+.preview {
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  background-color: #fff;
+
+  background-image:
+    linear-gradient(#f4f4f5 1px, transparent 1px),
+    linear-gradient(90deg, #f4f4f5 1px, transparent 1px);
+
+  background-size: 24px 24px;
+}
+
+
+@media (max-width: 700px) {
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #e5e5e7;
+  }
+
+  .main {
+    padding: 25px;
+  }
+}
